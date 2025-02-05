@@ -1,0 +1,111 @@
+/* ปรับขนาดรูปให้พอดีกับขนาดหน้าจอ */
+.carousel-image {
+    object-fit: cover; /* ทำให้รูปไม่ถูกบีบยืด */
+    height: 70vh; /* ปรับขนาดความสูงของภาพให้เหมาะสม */
+  }
+  
+  /* ทำให้ข้อความดูเด่น */
+  carousel-caption-top {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* เพิ่ม z-index เพื่อให้ข้อความแสดงอยู่เหนือรูป */
+    color: #fff; /* เปลี่ยนสีข้อความให้ชัดเจน */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ข้อความเพื่อให้มองเห็นชัด */
+    padding: 20px; /* เพิ่ม padding ให้เนื้อหาดูห่างจากขอบ */
+    width: 100%; /* ขยายให้กว้างเต็มพื้นที่ */
+  }
+  
+  .carousel-caption-top h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption-top h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .carousel-caption-top p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .carousel-caption-top a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  .carousel-caption-top a:hover {
+    text-decoration: underline;
+  }
+  
+  /* เพิ่มการทำงานให้กับปุ่ม Next/Prev */
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังสีดำให้ปุ่ม */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; /* ขนาดของไอคอนปุ่ม */
+    color: #fff; /* เปลี่ยนสีปุ่มเป็นขาว */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ปุ่ม */
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); /* ทำให้ปุ่มใหญ่ขึ้นเมื่อ hover */
+  }
+  
+  /* ปรับให้ carousel แสดงผลดีขึ้นในหน้าจอทุกขนาด */
+  @media (max-width: 768px) {
+    .carousel-caption-top {
+        top: 10%;
+        padding: 15px;
+    }
+
+    .carousel-caption-top h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption-top h3 {
+        font-size: 20px;
+    }
+
+    .carousel-caption-top p {
+        font-size: 14px;
+    }
+
+    .carousel-image {
+        height: 300px;
+    }
+}
+  .carousel-item img {
+    object-fit: cover; /* ปรับภาพให้เต็มพื้นที่โดยไม่ผิดสัดส่วน */
+    height: 78vh; /* ปรับขนาดความสูงของภาพให้เหมาะสม */
+  }
+ 
+.carousel-control-prev {
+  left: 10px; /* ตั้งปุ่มเลื่อนซ้ายอยู่ขอบซ้าย */
+}
+
+.carousel-control-next {
+  right: 10px; /* ตั้งปุ่มเลื่อนขวาอยู่ขอบขวา */
+}
+.carousel-caption-top{
+    text-align: center;
+
+
+}
+.carousel-caption-top li{
+    list-style-type: none;
+
+}
