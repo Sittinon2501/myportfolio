@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,10 @@ import { ProjectsComponent } from './projects/projects.component';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),    
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+
+    
   ],
   bootstrap: [AppComponent]
 })
