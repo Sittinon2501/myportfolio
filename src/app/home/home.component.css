@@ -1,0 +1,22 @@
+/* ตั้งค่าพื้นหลังสีขาวและตัวหนังสือสีดำสำหรับลิงก์ */
+.nav-link {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* เพิ่ม padding ซ้ายขวา 20px และบนล่าง 10px */
+    font-size: 18px; /* ลดขนาดฟอนต์ให้พอดี */
+    display: inline; /* ใช้ inline แทน inline-block */
+    text-transform: uppercase; /* ทำให้ตัวหนังสือเป็นตัวพิมพ์ใหญ่ */
+    font-weight: bold; /* ทำให้ตัวหนังสือหนาขึ้น */
+    width: auto; /* ความกว้างจะพอดีกับข้อความ */
+    max-width: 130px; /* จำกัดความกว้างสูงสุดของลิงก์ */
+    white-space: nowrap; /* ทำให้ข้อความไม่ตัดคำหรือหักบรรทัด */
+    overflow: hidden; /* ซ่อนข้อความที่ยาวเกิน */
+    text-overflow: ellipsis; /* ใช้ ... เมื่อข้อความยาวเกิน */
+  }
+  
+  /* เปลี่ยนพื้นหลังและตัวหนังสือเมื่อคลิกเลือกลิงก์ */
+  .nav-link.active-link {
+    background-color: #f8f9fa; /* สีพื้นหลังเมื่อเลือก */
+    color: black;
+  }
+  
