@@ -4,18 +4,6 @@
     height: 70vh; /* ปรับขนาดความสูงของภาพให้เหมาะสม */
   }
   
-  /* ทำให้ข้อความดูเด่น */
-  carousel-caption-top {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10; /* เพิ่ม z-index เพื่อให้ข้อความแสดงอยู่เหนือรูป */
-    color: #fff; /* เปลี่ยนสีข้อความให้ชัดเจน */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ข้อความเพื่อให้มองเห็นชัด */
-    padding: 20px; /* เพิ่ม padding ให้เนื้อหาดูห่างจากขอบ */
-    width: 100%; /* ขยายให้กว้างเต็มพื้นที่ */
-  }
   
   .carousel-caption-top h1 {
     font-size: 36px;
