@@ -19,4 +19,23 @@
     background-color: #f8f9fa; /* สีพื้นหลังเมื่อเลือก */
     color: black;
   }
-  
+  /* Animation for content loading */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to the .row */
+.animated-fade {
+  animation: fadeIn 0.8s ease-out;
+}
+.portfolio-me-title{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5rem;
+}

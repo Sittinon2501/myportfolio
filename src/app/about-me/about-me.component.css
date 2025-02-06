@@ -1,0 +1,146 @@
+/* Custom fonts and general styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Main container styles */
+.container-fluid {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+/* Heading styles */
+
+
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 1.5rem;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+/* List styles */
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    color: #e0e0e0;
+}
+
+/* Skills section */
+.technical-skills ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.technical-skills ul li:last-child {
+    border-bottom: none;
+}
+
+/* Image styles */
+.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Page number styles */
+.page-number {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 2rem 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .img-fluid {
+        margin-top: 2rem;
+    }
+
+}
+
+/* Hover effects */
+.technical-skills ul li:hover {
+    background-color: #252525;
+    transition: background-color 0.2s ease;
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+.about-me-title {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+/* Animation for content loading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-fluid > .row {
+    animation: fadeIn 0.8s ease-out;
+}
+.underline{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+}

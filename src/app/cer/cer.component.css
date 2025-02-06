@@ -1,0 +1,76 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* เลื่อนขึ้นจากด้านล่าง */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add fadeIn to the whole carousel */
+  #projectCarousel1 {
+    animation: fadeIn 1s ease-out; /* 1s คือความเร็วในการแสดงผล */
+  }
+  
+  /* Optional: For each carousel item */
+  .carousel-item {
+    animation: fadeIn 1s ease-out;
+    position: relative; /* กำหนดให้ carousel item เป็น relative เพื่อให้ caption สามารถใช้ตำแหน่งที่แน่นอนได้ */
+
+  }
+
+/* ปรับขนาดรูปภาพใน Carousel */
+.carousel-image {
+    object-fit: contain; /* ให้รูปภาพปรับขนาดให้พอดีกับพื้นที่ */
+    height: 700px; /* ปรับความสูงตามต้องการ */
+    width: 100%;
+    border-radius: 10px; /* มุมโค้งมน */
+    display: block; /* กำหนดให้รูปภาพแสดงเป็น block */
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังสีดำให้ปุ่ม */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; /* ขนาดของไอคอนปุ่ม */
+    color: #fff; /* เปลี่ยนสีปุ่มเป็นขาว */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ปุ่ม */
+  }
+    /* ปรับ .carousel-caption */
+    .carousel-caption {
+        position: absolute; /* ตำแหน่งสุดท้ายให้ caption อยู่บนรูป */
+        bottom: 10px; /* ปรับให้ข้อความอยู่ที่ด้านล่างของรูป */
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังสีดำโปร่งใส */
+        padding: 10px;
+        border-radius: 5px;
+        width: auto; /* ทำให้ความกว้างไม่เกินจากขอบ */
+        max-width: 100%; /* ควบคุมไม่ให้ความกว้างเกิน 100% ของรูป */
+        box-sizing: border-box; /* ใช้ box-sizing เพื่อให้ padding อยู่ภายในขอบ */
+        text-align: center; /* ทำให้ข้อความอยู่กลาง */
+      }
+      
+      /* ปรับข้อความใน caption */
+      .carousel-caption h5, .carousel-caption p {
+        margin: 0; /* ลบ margin ของข้อความ */
+        color: white; /* เปลี่ยนสีข้อความให้ขาว */
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ข้อความ */
+      }
+      
+    .carousel-caption-top h1{
+        text-align: center;
+        
+    }

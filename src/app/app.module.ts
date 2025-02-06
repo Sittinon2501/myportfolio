@@ -8,6 +8,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CerComponent } from './cer/cer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HomeComponent,
     AboutMeComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CerComponent
   ],
   imports: [
     BrowserModule,

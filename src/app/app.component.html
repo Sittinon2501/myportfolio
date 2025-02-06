@@ -10,16 +10,29 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/">Home</a>
+              <a class="nav-link text-white btn" routerLink="/">
+                <i class="bi bi-house-door"></i> Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/projects">Projects</a>
+              <a class="nav-link text-white btn" routerLink="/about-me">
+                <i class="bi bi-person"></i> About Me
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/about-me">About Me</a>
+              <a class="nav-link text-white btn" routerLink="/certificate">
+                <i class="bi bi-award"></i> Certificate
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/contact">Contact</a>
+              <a class="nav-link text-white btn" routerLink="/projects">
+                <i class="bi bi-briefcase"></i> Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn" routerLink="/contact">
+                <i class="bi bi-envelope"></i> Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -28,7 +41,7 @@
   </header>
 </div>
 
+<!-- Content Below Navbar -->
 <div class="container-fluid bg-dark text-white">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
-  
