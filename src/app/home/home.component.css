@@ -39,3 +39,23 @@
   border-bottom: 2px solid #ffffff;
   padding-bottom: 0.5rem;
 }
+.row.animated-fade {
+  min-height: 100vh; /* ใช้ความสูงของหน้าจอทั้งหมด */
+  display: flex;
+  align-items: center; /* จัดกึ่งกลางเนื้อหาในแนวตั้ง */
+}
+
+.col-md-6 img {
+  max-width: 100%; /* ปรับขนาดรูปให้เต็มความกว้าง */
+  height: 100%; /* กำหนดให้รูปภาพเต็มความสูงของ div */
+  object-fit: cover; /* ทำให้รูปภาพเต็มและไม่ยืดตัว */
+  border-radius: 15px; /* ทำให้ขอบมน */
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem; /* เพิ่มระยะห่างในส่วนของข้อความ */
+}
+

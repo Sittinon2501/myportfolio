@@ -20,3 +20,20 @@
   .large-text {
     font-size: 1.2rem; /* You can adjust this value as per your preference */
 }
+.row.animated-fade {
+    min-height: 100vh; /* ทำให้ความสูงของแถวเต็มหน้าจอ */
+    display: flex;
+    align-items: center; /* จัดเนื้อหากลางแนวตั้ง */
+    justify-content: center; /* จัดเนื้อหากลางแนวนอน */
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-6 img {
+    max-width: 100%; /* ปรับขนาดให้เหมาะสม */
+    height: auto;
+    border-radius: 15px; /* ทำให้ขอบรูปมนๆ ทุกมุม */
+}
