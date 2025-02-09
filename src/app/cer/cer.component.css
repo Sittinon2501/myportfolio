@@ -25,7 +25,7 @@
 /* ปรับขนาดรูปภาพใน Carousel */
 .carousel-image {
     object-fit: contain; /* ให้รูปภาพปรับขนาดให้พอดีกับพื้นที่ */
-    height: 700px; /* ปรับความสูงตามต้องการ */
+    height: 800px; /* ปรับความสูงตามต้องการ */
     width: 100%;
     border-radius: 10px; /* มุมโค้งมน */
     display: block; /* กำหนดให้รูปภาพแสดงเป็น block */
@@ -74,3 +74,4 @@
         text-align: center;
         
     }
+    
