@@ -1,9 +1,19 @@
 /* ปรับขนาดรูปให้พอดีกับขนาดหน้าจอ */
 .carousel-image {
     object-fit: cover; /* ทำให้รูปไม่ถูกบีบยืด */
-    height: 70vh; /* ปรับขนาดความสูงของภาพให้เหมาะสม */
-  }
-  
+    width: 100%; /* ให้รูปเต็มความกว้างของ container */
+    max-width: 1900px; /* กำหนดขนาดสูงสุดของรูป */
+    height: 1000px; /* กำหนดความสูงคงที่ */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 1900px;
+    height: 1000px;
+}
+
+ 
   
   .carousel-caption-top h1 {
     font-size: 36px;
@@ -76,11 +86,7 @@
         height: 300px;
     }
 }
-  .carousel-item img {
-    object-fit: cover; /* ปรับภาพให้เต็มพื้นที่โดยไม่ผิดสัดส่วน */
-    height: 78vh; /* ปรับขนาดความสูงของภาพให้เหมาะสม */
-  }
- 
+
 .carousel-control-prev {
   left: 10px; /* ตั้งปุ่มเลื่อนซ้ายอยู่ขอบซ้าย */
 }
